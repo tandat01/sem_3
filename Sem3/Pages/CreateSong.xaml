@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Sem3.Pages.CreateSong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sem3.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock TextAlignment="Left" FontSize="20" Margin="10">Create Song</TextBlock>
+        <Grid RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Song" Grid.Column="0" Grid.Row="0" Width="200"></TextBlock>
+            <TextBox x:Name="nameSong" Grid.Column="1" Grid.Row="0"></TextBox>
+            <TextBlock Text="Author" Grid.Column="0" Grid.Row="1  "></TextBlock>
+            <TextBox x:Name="nameAuthor" Grid.Column="1" Grid.Row="1" Width="200"></TextBox>
+            <TextBlock Text="Singer     " Grid.Column="0" Grid.Row="2  "></TextBlock>
+            <TextBox x:Name="nameSing" Grid.Column="1" Grid.Row="2" Width="200"></TextBox>
+            <TextBlock Text="Thumbnail" Grid.Column="0" Grid.Row="3 "></TextBlock>
+            <TextBox x:Name="Thumbnail" Grid.Column="1" Grid.Row="3" Width="200"></TextBox>
+            <TextBlock Text="Link" Grid.Column="0" Grid.Row="4 "></TextBlock>
+            <TextBox x:Name="Link" Grid.Column="1" Grid.Row="4" Width="200"></TextBox>
+            <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" >
+                <Button  Margin="20" Width="70" >Upload</Button>
+                <Button Width="70" Content="Delete"/>
+            </StackPanel>
+            <HyperlinkButton Content="ListSong" Grid.Column="6" Margin="219,0,0,0" Click="List_Click"/>
+            <HyperlinkButton Content="Login" Grid.Column="6" Margin="219,20,0,0" Grid.Row="1"  Click="Login_Click"/>
+            <HyperlinkButton Content="Register" Grid.Column="6" Margin="219,27,0,0" Grid.Row="2" Click="Register_Click"/>
+        </Grid>
+    </StackPanel>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Sem3.Pages.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sem3.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock TextAlignment="Left" FontSize="20" Margin="10">Login</TextBlock>
+        <Grid RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Email" Grid.Column="0" Grid.Row="0" Width="200"></TextBlock>
+            <TextBox x:ConnectionId='2' x:Name="Email" Grid.Column="1" Grid.Row="0"></TextBox>
+            <TextBlock Text="Password" Grid.Column="0" Grid.Row="1  "></TextBlock>
+            <PasswordBox x:ConnectionId='3' x:Name="Password" Grid.Column="1" Grid.Row="1" Width="200"></PasswordBox>
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" >
+                <Button  Margin="20" Width="70" >Login</Button>
+                <Button Width="70" Content="Reset"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>
+
